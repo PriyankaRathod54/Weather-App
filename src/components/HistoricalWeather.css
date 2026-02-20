@@ -1,0 +1,219 @@
+.historical-weather-container {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.historical-header {
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 20px;
+}
+
+.historical-header h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.historical-header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.historical-timeline {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(30, 41, 59, 0.4);
+}
+
+.timeline-card {
+  flex: 0 0 100px;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.2);
+}
+
+.timeline-card.selected {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.3) 0%, rgba(6, 182, 212, 0.3) 100%);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 32px rgba(14, 165, 233, 0.3);
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.timeline-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.timeline-temp {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.timeline-precip {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.detailed-historical {
+  padding: 28px;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  animation: slideInUp 0.4s ease-out;
+}
+
+.detailed-historical h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.detail-item {
+  background: rgba(59, 189, 248, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 189, 248, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-item .detail-label {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-item .detail-value {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.historical-chart {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.historical-chart h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.trend-visualization {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 150px;
+  gap: 8px;
+  padding: 10px;
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 12px;
+}
+
+.trend-bar {
+  flex: 1;
+  max-width: 40px;
+  background: linear-gradient(180deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.trend-bar:hover {
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+  transform: scaleY(1.05);
+}
+
+.historical-summary {
+  padding: 28px;
+  border-radius: 20px;
+}
+
+.historical-summary h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.summary-item {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.summary-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.summary-value {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .historical-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .historical-timeline {
+    overflow-x: auto;
+  }
+
+  .detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

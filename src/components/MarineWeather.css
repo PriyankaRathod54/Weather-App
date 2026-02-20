@@ -1,0 +1,265 @@
+.marine-weather-container {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.marine-header {
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 20px;
+}
+
+.marine-header h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.marine-header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.marine-safety {
+  margin-bottom: 24px;
+}
+
+.safety-card {
+  padding: 24px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid;
+}
+
+.safety-card h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.safety-level {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.safety-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.marine-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.marine-metric-card {
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.marine-metric-card h4 {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  margin: 0;
+  font-weight: 700;
+}
+
+.metric-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.metric-row:hover {
+  background: rgba(59, 189, 248, 0.1);
+}
+
+.metric-icon {
+  font-size: 1.5rem;
+  min-width: 30px;
+  text-align: center;
+}
+
+.metric-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-value {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.marine-conditions {
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 20px;
+}
+
+.marine-conditions h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.condition-item {
+  background: rgba(59, 189, 248, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 189, 248, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.condition-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.condition-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.marine-recommendations {
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 20px;
+}
+
+.marine-recommendations h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.recommendations-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.recommendation-item {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.recommendation-item:hover {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.25) 0%, rgba(6, 182, 212, 0.25) 100%);
+  border-color: rgba(14, 165, 233, 0.4);
+  transform: translateY(-4px);
+}
+
+.rec-icon {
+  font-size: 2rem;
+  min-width: 40px;
+}
+
+.rec-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rec-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.rec-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.marine-warning {
+  padding: 24px;
+  border-radius: 20px;
+  border: 2px solid;
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.marine-warning h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.marine-warning p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .marine-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .marine-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recommendations-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .safety-level {
+    font-size: 1.8rem;
+  }
+
+  .marine-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conditions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

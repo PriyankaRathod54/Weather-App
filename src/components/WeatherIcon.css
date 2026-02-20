@@ -1,0 +1,23 @@
+.weather-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  animation: slideInUp 0.6s ease-out;
+}
+
+.weather-icon-small {
+  font-size: 2rem;
+}
+
+.weather-icon-medium {
+  font-size: 4rem;
+}
+
+.weather-icon-large {
+  font-size: 6rem;
+}
+
+.weather-icon-xlarge {
+  font-size: 8rem;
+}
